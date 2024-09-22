@@ -1,0 +1,25 @@
+1. create a VPC (don't use default vpc)
+2. create a IGW(internet gateway and attach it)
+3. create all subnets with in the VPC (both public and private subnets)
+4. create routetables 
+5. create routes 
+6. and attach them to the created subnets based (public_subnet and private_subnet)
+7. create Elastic_IP for configuring NAT gateway
+8. place the NAT Gateway in the public subnet
+9. add the NAT Gateway route to the private_subnets(Api tier and database tier)
+10. make VPC peering connections (model-1 : same az and same account)
+11. Add routes for the VPC peering in both the VPC's.
+
+############### Tagging Strategy #####################
+
+##### common Tags ######
+1. project = ROboshop
+2. environment = dev
+3. terraform = True
+
+###### Resource-Specific-tags ###############
+1. tags for each and every resource created
+
+we have to merge tags ex: merge(commontags, resource tags)
+ -> merge is a function in terraform 
+ -> using you can merge multiple map data

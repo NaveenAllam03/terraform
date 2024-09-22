@@ -1,0 +1,14 @@
+1. datasource in terraform is used to query the provider (or) any given source information dynamically.
+   -> the resources or sources you use are constantaly updated, if you use datasources they will update the new info automatically.
+
+################################### data source syntax #################################    
+
+data "aws_ami" "example" {
+  most_recent = true
+
+  owners = ["self"]
+  tags = {
+    Name   = "app-server"
+    Tested = "true"
+  }
+}

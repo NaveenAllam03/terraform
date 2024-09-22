@@ -1,0 +1,8 @@
+######################################## syntax ########################################3
+
+for_each = <file name >
+  if you want to use varibale in for_each loop you will get a key word called < each >
+
+  example:
+
+  each.value or each.key

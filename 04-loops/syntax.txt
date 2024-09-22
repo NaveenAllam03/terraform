@@ -1,0 +1,13 @@
+
+
+There are three types of loops in terraform
+
+
+1. count based loops
+-> it is mostly used to iterate the list based data 
+
+2. for each loops
+-> it is mostly used to iterate the  map based data
+
+3. dynamic loops
+-> it is mostly used for repetetive items with in the code 
