@@ -76,3 +76,34 @@ variable "database_subnet_tags" {
     type = map 
     default = {}
 }
+
+variable "aws_nat_gateway_tags" {
+    type = map 
+    default = {}
+}
+
+variable "public_rt_tags" {
+    default = {}
+}
+
+variable "private_rt_tags" {
+    default = {}
+}
+
+variable "database_rt_tags" {
+    default = {}
+}
+
+variable "peering_required" {
+    type = bool
+    default = false
+}
+
+variable "vpc_peer_info" {
+    type = string 
+    default = ""
+}
+
+variable "vpc_peering_tags" {
+    default = {}
+}

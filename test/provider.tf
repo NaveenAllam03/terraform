@@ -12,10 +12,10 @@ terraform {
       version = "5.66.0"
     }
   }
-   backend "s3" {
-    bucket = "ncabucket-01"
-    key = "projectsample"
-    region = "us-east-1"
+  backend "s3" {
+    bucket         = "ncabucket-01"
+    key            = "projectsample"
+    region         = "us-east-1"
     dynamodb_table = "ncatable01"
   }
 }
