@@ -1,3 +1,3 @@
-# output "roboshop" {
-#   value = module.roboshop.azs_avaliable
-# }
+output "roboshop" {
+  value = module.roboshop.azs_avaliable
+}

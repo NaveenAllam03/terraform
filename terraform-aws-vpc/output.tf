@@ -5,7 +5,3 @@ output "azs_avaliable" {
 output "vpc_id" {
     value = aws_vpc.main.id
 }
-
-output "azs_avaliable" {
-    value = local.az_names
-}
