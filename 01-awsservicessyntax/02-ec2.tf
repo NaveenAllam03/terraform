@@ -15,3 +15,7 @@ resource "aws_instance" "catalogue" {
       sudo systemctl enable nginx
     EOF  
 }
+
+resource "aws_instance" "catalogue" {
+  ami = 
+}
